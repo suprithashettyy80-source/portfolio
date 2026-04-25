@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menu-btn">☰</button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Hi, I'm a Java Full Stack Developer</h1>
+    <p>Building scalable web applications with Java, Spring Boot & Microservices</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Java developer with experience in J2EE, JDBC, Servlets, Spring Boot,
+        Microservices, and automation testing using JUnit and TestNG.
+    </p>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>J2EE Web Application</h3>
+        <p>Developed MVC-based web app using Servlets & JSP.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>JDBC CRUD App</h3>
+        <p>Database integration using JDBC with MySQL.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Spring Boot REST API</h3>
+        <p>Built RESTful APIs and microservices architecture.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Automation Testing</h3>
+        <p>Implemented testing using JUnit and TestNG.</p>
+    </div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <span>Java</span>
+        <span>J2EE</span>
+        <span>JDBC</span>
+        <span>Servlets</span>
+        <span>Spring Boot</span>
+        <span>Microservices</span>
+        <span>JavaScript</span>
+        <span>JUnit</span>
+        <span>TestNG</span>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

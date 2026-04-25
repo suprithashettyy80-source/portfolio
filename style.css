@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #020617;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #38bdf8;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+}
+
+/* Sections */
+section {
+  padding: 50px 30px;
+}
+
+/* Cards */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Skills */
+.skills span {
+  background: #38bdf8;
+  margin: 5px;
+  padding: 8px;
+  display: inline-block;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #020617;
+  padding: 20px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  ul {
+    display: none;
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+  }
+}
